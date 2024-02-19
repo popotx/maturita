@@ -1,0 +1,42 @@
+
+.product-container {
+  display: flex;
+  justify-content: space-between; /* Spread content across the full width */
+  width: 100%; /* Full width of the viewport */
+  margin: 40px 0; /* Margin on top and bottom only */
+  padding: 20px; /* Padding inside the container */
+  background-color: #fff; /* White background for the product details */
+  /* box-shadow: none; No shadow for a full-width container, uncomment if needed */
+  
+}
+
+.product-image {
+  width: 35%; /* Adjust image width as needed */
+  margin-right: 2%; /* Small margin between image and details */
+}
+
+.product-information {
+  width: 53%; /* Adjust details width as needed */
+  display: flex;
+  flex-direction: column; /* Stack the info vertically */
+  margin-top: 5%;
+}
+
+.product-information h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 2rem; /* Larger font size for the title */
+}
+
+.product-information .product-detail {
+  margin-bottom: 15px;
+  line-height: 1.5; /* Increased line-height for better readability */
+  color: #666; /* Lighter grey for the details */
+}
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+/* Apply a background image and position the form in the center */
+.login-page {
+    background: url(../pictures/image6.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style inputs with a translucent effect */
+  .login-form input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0; /* Remove border-radius if you want flat design as in the image */
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+  }
+  
+  .login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Remove the default browser focus outline */
+  .login-form input:focus {
+    outline: none;
+  }
+  
+  /* Style the buttons */
+  .buttonL, .button-backL {
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+    letter-spacing: 5px;
+    background-color: rgba(54, 82, 54, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1rem; /* Adjust border-radius to match Bootstrap's default if needed */
+    transition: background-color 700ms, color 700ms; /* Transition time set to 700ms */
+  }
+  
+  .button-backL {
+    background-color: #f44336; /* Different color for the back button */
+  }
+  
+  /* Add a hover effect for buttons */
+  .buttonL:hover, .button-backL:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style the register link */
+  .login-form p {
+    text-align: center;
+    color: white;
+  }
+  
+  .login-form a {
+    color: #00BFFF;
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  

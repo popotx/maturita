@@ -1,0 +1,50 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #ffffff; /* This is the text color */
+    background: url(../pictures/image6.jpg) no-repeat center center; 
+    background-size: cover; 
+    min-height: 100vh;
+    max-height: 100vh; 
+}
+
+.profile-frame {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%; /* This will make it oval */
+    overflow: hidden;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6); /* This adds a shadow to the frame */
+    margin-right: 20px; /* Space between the picture and the text */
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove the space under the image */
+}
+
+.about-text {
+    max-width: 500px; /* Maximum text width */
+}
+
+.read-more {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 5px;
+    background-color: rgba(54, 82, 54, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1rem; /* Adjust border-radius to match Bootstrap's default if needed */
+    transition: background-color 700ms, color 700ms; /* Transition time set to 700ms */
+  }
+  
+  .read-more:hover {
+    background-color: rgba(230, 233, 230, 1);
+    color: rgba(54, 82, 54, 1);
+  }
+  
