@@ -3,16 +3,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from './Navbar.js';
 import '../styles/LoginPage.css';
-
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
-
-
     const handleLogin = async (e) => {
       e.preventDefault();
-
       try {
         const response = await fetch("http://localhost:5000/login", {
           method: "POST",
@@ -21,9 +17,7 @@ function Login() {
           },
           body: JSON.stringify({ username, password }),
         });
-
         const data = await response.json();
-
         if (response.ok) {
           localStorage.setItem('token', data.token);
           console.log(data.message);
@@ -36,7 +30,6 @@ function Login() {
         alert("An error occurred during login");
       }
     }
-
     return (
         <div className="login-page">
             <div className="navbar">

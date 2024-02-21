@@ -24,7 +24,8 @@ const AboutUs = () => {
             <div className="about-text">
                 <h2>ABOUT US</h2>
                 <p>
-                    Vitajte v našom online obchode s rastlinami! Sme váš spoľahlivý zdroj pre krásne a zdravé rastliny, ktoré osviežia váš domov alebo kanceláriu. Naša vášeň pre záhradníctvo nám umožňuje ponúkať široký výber rôznych druhov rastlín, od kvitnúcich kaskád po exotické sukulenty.
+                    Vitajte v našom online obchode s rastlinami! Sme váš spoľahlivý zdroj pre krásne a zdravé rastliny, ktoré osviežia váš domov alebo kanceláriu. 
+                    Naša vášeň pre záhradníctvo nám umožňuje ponúkať široký výber rôznych druhov rastlín, od kvitnúcich kaskád po exotické sukulenty.
                     Pri nakupovaní u nás môžete mať istotu, že dostanete kvalitné rastliny, ktoré sú starostlivo vybrané a starostlivo zabalíme...
                 </p>
                 <button className="read-more" onClick={scrollToMoreText}>READ MORE</button>

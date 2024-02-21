@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar.js';
+import '../styles/Cart.css';
 
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -49,26 +50,29 @@ function Cart() {
   };
 
   return (
-    <div>
-      <Navbar />
-      <h2>Your Cart</h2>
-      <div>
-        {cartItems.map((item) => (
-          <div key={item.product_id}>
-            <img src={`data:image/jpeg;base64,${item.image_data}`} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>Price: {item.price}€</p>
-            <p>Quantity: {item.quantity}
-            <button onClick={() => update(item.product_id, 1)}>+</button>
-            <button onClick={() => update(item.product_id, -1)}>-</button>
-
-            </p>
-            {/* Implement the removeFromCart function similar to updateQuantity */}
+        <div>
+          <Navbar/>
+          <div className="cart-container">
+            <h2 className="cart-title">Your Cart</h2>
+            <div>
+              {cartItems.map((item) => (
+                <div className="cart-item" key={item.product_id}>
+                  <img src={`data:image/jpeg;base64,${item.image_data}`} alt={item.name} />
+                  <div className="cart-item-details">
+                    <h3>{item.name}</h3>
+                    <p>Price: {item.price}€</p>
+                    <p>Quantity: {item.quantity}</p>
+                    <div className="cart-item-actions">
+                      <button onClick={() => update(item.product_id, 1)}>+</button>
+                      <button onClick={() => update(item.product_id, -1)}>-</button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default Cart;
+        </div>
+      );
+    }
+    export default Cart;
+    
