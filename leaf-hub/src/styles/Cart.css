@@ -1,12 +1,7 @@
-/* Cart.css */
-.body{
-    background-color: #555;
-}
 .cart-container {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    
   }
   
   .cart-title {
@@ -48,7 +43,7 @@
   }
   
   .cart-item button {
-    background-color: #007bff;
+    background-color: rgba(54, 82, 54, 1);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -58,14 +53,14 @@
   }
   
   .cart-item button:hover {
-    background-color: #0056b3;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(54, 82, 54, 1);
   }
   
   .quantity-display {
     padding: 0 10px;
   }
   
-  /* Additional styles for responsiveness */
   @media (max-width: 768px) {
     .cart-item {
       flex-direction: column;
@@ -79,5 +74,23 @@
     .cart-item-actions {
       justify-content: start;
     }
+  }
+  .accordion {
+    font-family: 'Inter', sans-serif;
+    width: 45%;
+    letter-spacing: 5px;
+    background-color: rgba(54, 82, 54, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1rem;
+    transition: background-color 700ms, color 700ms;
+  }
+  .accordion:hover{
+    background-color: rgba(230, 233, 230, 1);
+    color: rgba(54, 82, 54, 1);
   }
   

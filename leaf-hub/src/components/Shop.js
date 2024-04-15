@@ -1,12 +1,12 @@
 import React, { useMemo, useEffect, useState } from 'react';
-import axios from 'axios'; // Make sure to install axios with npm or yarn
+import axios from 'axios'; 
 import '../styles/Shop.css'; 
 import Navbar from './Navbar.js';
 import { useLocation, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Shop() {
-    const [items, setItems] = useState([]); // State to hold items from database
+    const [items, setItems] = useState([]); 
     const [category, setCategory] = useState('');
     const location = useLocation();
     let navigate = useNavigate();
@@ -17,10 +17,10 @@ function Shop() {
     }, [location]);
 
     useEffect(() => {
-        // Fetch items from the server when the component mounts
-        axios.get('http://localhost:5000/products') // Make sure the URL matches your server's endpoint
+        
+        axios.get('http://localhost:5000/products') 
             .then(response => {
-                // Assuming the server sends back an array of items
+                
                 setItems(response.data);
             })
             .catch(error => {

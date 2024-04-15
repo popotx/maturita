@@ -5,7 +5,7 @@ import obrazok1 from './pictures/image1.jpg';
 import obrazok2 from './pictures/image2.jpg';
 import obrazok3 from './pictures/image3.jpg';
 import obrazok4 from './pictures/image4.jpg';
-import './App.css'; // Import custom CSS file
+import './App.css'; 
 import Navbar from './components/Navbar.js';
 import { useNavigate } from 'react-router-dom';
 

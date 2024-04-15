@@ -1,11 +1,6 @@
-/* Carousel indicators to be circular */
-
 .rounded-carousel .carousel-indicators li {
     border-radius: 50%;
 }
-
-
-/* Hide the arrow/down icon next to dropdown toggles */
 
 .nav-item .dropdown-toggle::after {
     display: none !important;
@@ -16,8 +11,6 @@
 }
 
 
-/* Set navbar links and brand color to white */
-
 .navbar-brand,
 .navbar-nav .nav-link,
 .d-flex .nav-link {
@@ -25,23 +18,17 @@
     border-radius: 5px;
 }
 
-
-/* Set the navbar toggler icon color to white */
-
 .navbar-toggler-icon {
     background-color: #ffffff;
 }
-
-
-/* Custom underline and color on hover for nav links */
 
 .navbar-nav .nav-link,
 .nav-item .dropdown-toggle,
 .log_nav {
     color: #ffffff;
-    /* Default text color */
+    
     text-decoration: none;
-    /* Removes default underline */
+    
     position: relative;
 }
 
@@ -51,9 +38,9 @@
 .nav-item .dropdown-toggle:focus,
 .log_nav:hover {
     color: black !important;
-    /* Change text color on hover/focus */
+    
     background-color: white;
-    /* White background */
+  
 }
 
 .navbar-nav .nav-link:hover::after,
@@ -61,26 +48,17 @@
 .nav-item .dropdown-toggle:hover::after,
 .nav-item .dropdown-toggle:focus::after {
     width: 100%;
-    /* Full width underline on hover/focus */
+  
 }
-
-
-/* Dropdown item hover effect */
 
 .dropdown-item:hover {
     background-color: #f8f9fa;
 }
 
-
-/* Show dropdown menu on hover */
-
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu,
 .navbar-nav .nav-item.dropdown:focus-within .dropdown-menu {
     display: block;
 }
-
-
-/* Align dropdown text to the left */
 
 .nav-item.dropdown {
     text-align: left;
@@ -98,9 +76,7 @@
     cursor: pointer;
     outline: none;
     border-radius: 1rem;
-    /* Adjust border-radius to match Bootstrap's default if needed */
     transition: background-color 700ms, color 700ms;
-    /* Transition time set to 700ms */
 }
 
 .buttonM:hover {
@@ -115,3 +91,8 @@
 .cart {
     width: 35%;
 }
+.red-bg {
+    background-color: #555;
+    transition: background-color 700ms ; 
+  }
+  

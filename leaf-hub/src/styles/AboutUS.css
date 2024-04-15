@@ -3,32 +3,29 @@
     align-items: center;
     justify-content: center;
     
-    color: #ffffff; /* This is the text color */
+    color: #ffffff; 
     background: url(../pictures/image6.jpg) no-repeat center center; 
     background-size: cover; 
     min-height: 100vh;
     max-height: 100vh; 
 }
-
 .profile-frame {
-    width: 150px; /* Adjust the size as needed */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* This will make it oval */
+    border-radius: 50%; 
     overflow: hidden;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6); /* This adds a shadow to the frame */
-    margin-right: 20px; /* Space between the picture and the text */
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6); 
+    margin-right: 20px; 
 }
-
 .profile-picture {
     width: 100%;
     height: auto;
-    display: block; /* Remove the space under the image */
+    display: block; 
 }
 
 .about-text {
-    max-width: 500px; /* Maximum text width */
+    max-width: 500px; 
 }
-
 .read-more {
     font-family: 'Inter', sans-serif;
     letter-spacing: 5px;
@@ -39,12 +36,26 @@
     font-size: 1rem;
     cursor: pointer;
     outline: none;
-    border-radius: 1rem; /* Adjust border-radius to match Bootstrap's default if needed */
-    transition: background-color 700ms, color 700ms; /* Transition time set to 700ms */
+    border-radius: 1rem; 
+    transition: background-color 700ms, color 700ms; 
   }
-  
   .read-more:hover {
     background-color: rgba(230, 233, 230, 1);
     color: rgba(54, 82, 54, 1);
   }
-  
+  .expand{
+    background-color: rgb(28, 28, 28);
+  }
+  .text{
+    padding-bottom: 23em;
+  }
+  .pismo{
+    font-size: 19px;
+    text-align: start;
+    color: #ffffff;
+    margin-right: 20px;
+    padding-top: 500px;
+    width: 65%;
+    padding-left: 750px;
+     
+}
